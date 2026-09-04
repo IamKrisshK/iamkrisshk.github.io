@@ -172,7 +172,7 @@ body:has(.nav-links a:hover) {
     text-align: center;
 }
 .folder-icon::before{
-    content:url(folder.png);
+    content:url(assets/folder.png);
 }
 .content-card{
     display: flex;
