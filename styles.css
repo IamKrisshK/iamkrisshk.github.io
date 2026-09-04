@@ -1,0 +1,249 @@
+:root {
+    --bgwhite: #f8f8fa;
+    --black: #201d1d;
+    --red: #890404;
+    --border: #1f1f29;
+    --brown: #413a42;
+    --grey: #596070;
+    --lgrey: #96a2b3;
+    --front: #eaf0d8;
+    --h1: 2rem;
+    --h2: 1.5rem;
+    --h3: 0.9rem;
+    --h4: 0.7rem;
+    --w1: 500;
+    --w2: 300;
+    --w3: 200;
+    --w4: 100;
+    --sgap: 3rem;
+    --gap1: 1.4rem;
+    --gap2: 0.9rem;
+    --gap3: 0.7rem;
+    --gap4: 0.5rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+    background: none;
+}
+h1 {
+    font-size: var(--h1);
+    font-weight: var(--w1);
+    margin-bottom: var(--gap2);
+}
+
+h2 {
+    font-size: var(--h2);
+    font-weight: var(--w2);
+    margin-bottom: var(--gap2);
+}
+
+h3 {
+    font-size: var(--h3);
+    font-weight: var(--w3);
+    margin-bottom: var(--gap3);
+}
+
+h4 {
+    font-size: var(--h4);
+    font-weight: var(--w4);
+    margin-bottom: var(--gap4);
+}
+hr {
+    margin-top: var(--gap1);
+    margin-bottom: var(--gap1);
+    border: 0;
+    height: 1.4px;
+    width: 97vw;
+    background: #333;
+    align-self: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bgwhite);
+    transition: background 0.2s;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--border);
+    z-index: 100;
+    background: var(--brown);
+    transform: border-bottom 0.2s;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--bgwhite);
+}
+
+.nav-links {
+    display: flex;
+    gap: 3px;
+}
+
+.nav-links a {
+    width: 200px;
+    height: 60px;
+    clip-path: polygon(0 0, 86% 0, 100% 100%, 0% 100%);
+    padding: 10px;
+    color: #aaa;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+    color: var(--brown);
+    background-color: var(--front);
+}
+.navbar:has(.nav-links a:hover) {
+    border-bottom: 2px solid var(--front);
+}
+body:has(.nav-links a:hover) {
+    background: var(--front);
+}
+.nav-button {
+    background: var(--bgwhite);
+    color: black;
+    border: none;
+    padding: 12px 22px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-button:hover {
+    background: #ccc;
+}
+.col-sep {
+    height: 90px;
+    width: 0;
+    border: 1px dashed;
+    background: var(--border);
+    margin-left: var(--gap3);
+    margin-right: var(--gap3);
+}
+.hero-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-slot h3 {
+    text-align: center;
+}
+.hero-slots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-system{
+    margin-top: var(--sgap);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.folder{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}
+.folder-icon::before{
+    content:url(folder.png);
+}
+.content-card{
+    display: flex;
+    align-items: center;
+}
+.card-info{
+    margin-left: var(--gap2);
+    display: flex;
+    flex-direction: column;
+}
+#viewpane{
+    display: flex;
+    flex-direction: column;
+}
+#view-content{
+    margin-top: var(--gap1);
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    margin-bottom: var(--gap1);
+    padding: 20px;
+}
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#home,#projects {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+#home h1 {
+    margin-top: var(--sgap);
+}
+
+#cycle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: var(--gap2);
+    margin-bottom: var(--gap2);
+}
+.phase{
+    text-align: center;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+}
+#v-line,
+#h-line {
+    border: none;
+    pointer-events: none;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+}
+#v-line {
+    width: 2px;
+    height: 100vh;
+    top: 0;
+}
+#h-line {
+    width: 100vw;
+    height: 2px;
+    left: 0;
+}

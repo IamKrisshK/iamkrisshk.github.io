@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <title>| Krissh K.</title>
+    </head>
+    <body>
+        <div id="v-line"></div>
+        <div id="h-line"></div>
+        <nav class="navbar">
+            <div class="logo">KrisshK</div>
+            <div class="nav-links">
+                <a href="#home" onclick=tohome()>Home</a>
+                <a href="#projects" onclick=toproj()>Projects</a>
+                <a href="#about" onclick=toabout()>About</a>
+                <a href="#contact" onclick=tocontact()>Contact</a>
+            </div>
+
+            <button class="nav-button">Let's Talk</button>
+        </nav>
+
+        <div id="home">
+            <h1>I BUILD. I EXPERIMENT. I SOLVE.</h1>
+            <br />
+            <h3>
+                I’m a developer and technologist exploring the intersection of
+                AI, software, systems, and the web. I turn ideas into working
+                projects, experiment with unconventional solutions, and learn by
+                building.
+            </h3>
+            <hr />
+            <h1>PASSIONATE ABOUT</h1>
+            <hr />
+            <div class="hero-slots">
+                <div class="hero-slot">
+                    <h2>AI & Machine Learning</h2>
+                    <h3>
+                        Building intelligent systems, experimenting with
+                        multimodal AI, and working with ML models and data.
+                    </h3>
+                </div>
+                <div class="col-sep"></div>
+                <div class="hero-slot">
+                    <h2>Software & Systems</h2>
+                    <h3>
+                        From operating systems and compilers to automation and
+                        system-level applications, I like understanding how
+                        things work underneath.
+                    </h3>
+                </div>
+                <div class="col-sep"></div>
+                <div class="hero-slot">
+                    <h2>Web & Applications</h2>
+                    <h3>
+                        Designing and developing functional, interactive
+                        applications with modern web technologies.
+                    </h3>
+                </div>
+                <div class="col-sep"></div>
+                <div class="hero-slot">
+                    <h2>Research & Experiments</h2>
+                    <h3>
+                        I enjoy taking interesting problems apart, testing
+                        ideas, and turning experiments into practical
+                        implementations.
+                    </h3>
+                </div>
+            </div>
+            <hr />
+            <h1>Exploring: AI × Systems × Multimodal Computing</h1>
+            <h3>
+                I’m particularly interested in building systems where multiple
+                intelligent models can work together efficiently rather than
+                operating in isolation.
+            </h3>
+            <hr />
+            <div class="hero-slots">
+                <div class="hero-slot">
+                    <h2>SRMFlows</h2>
+                    <h3>Campus navigation application</h3>
+                </div>
+                <div class="col-sep"></div>
+                <div class="hero-slot">
+                    <h2>HADS Prediction System</h2>
+                    <h3>Machine-learning prediction platform</h3>
+                </div>
+                <div class="col-sep"></div>
+                <div class="hero-slot">
+                    <h2>HydraFLow</h2>
+                    <h3>AI-driven hydrological modeling</h3>
+                </div>
+                <div class="col-sep"></div>
+                <div class="hero-slot">
+                    <h2>Multimodal DAG Orchestrator</h2>
+                    <h3>Adaptive orchestration of specialized AI models</h3>
+                </div>
+            </div>
+            <hr />
+            <h2>MY CYCLE</h2>
+            <div id="cycle">
+                <div class="phase">
+                    Learn
+                </div>
+                <div class="arrow"></div>
+                <div class="phase">
+                    Build
+                </div>
+                <div class="arrow"></div>
+                <div class="phase">
+                    Break
+                </div>
+                <div class="arrow"></div>
+                <div class="phase">
+                    Understand
+                </div>
+                <div class="arrow"></div>
+                <div class="phase">
+                    Improve
+                </div>
+            </div>
+            <h3>Don't just use tech, build it!!</h3>
+            <hr/>
+            <div class="contact">
+                <h2>Lets Build Together</h2>
+            </div>
+        </div>
+
+        <div id="projects" style="display: none;">
+            <div class="nav-system">
+                <div class="folder" onclick=openfolder("ai_ml")>
+                    <div class="folder-icon"></div>
+                    <span>AI/ML</span>
+                </div>
+                <div class="folder" onclick=openfolder("multimodal")>
+                    <div class="folder-icon"></div>
+                    <span>Multimodal</span>
+                </div>
+                <div class="folder" onclick=openfolder("webapps")>
+                    <div class="folder-icon"></div>
+                    <span>Webapps</span>
+                </div>
+            </div>
+            <div id="viewpane" style="display: none;">
+                <hr/>
+                <div id="view-content">
+                    <div id="content">
+
+                    </div>
+                </div>
+                <hr/>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
